@@ -11,7 +11,7 @@ import './App.css'
 
 function App() {
   
-const basename = process.env.NODE_ENV === "production" ? "/https://github.com/marieThielens/" : "";
+const basename = process.env.NODE_ENV === "production" ? "/" : "";
   return (
     <>
     <BrowserRouter basename={basename}>
