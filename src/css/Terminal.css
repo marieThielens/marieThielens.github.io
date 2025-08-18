@@ -1,0 +1,41 @@
+.terminal {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  height: 400px;
+  overflow-y: auto;
+  font-family: monospace;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.terminal-line {
+  margin-bottom: 0.2rem;
+}
+
+/* Ligne input avec prompt fixe */
+.terminal-input-line {
+  display: flex;
+}
+
+.terminal-prompt {
+  color: lime;
+  margin-right: 0.5rem;
+}
+
+.terminal-input {
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+/* Pour mettre certaines commandes en couleur */
+.terminal-line span.command {
+  color: deeppink;
+}
+
+.terminal-line {
+  white-space: pre-wrap; /* important pour que les \n soient pris en compte */
+}

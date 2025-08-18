@@ -1,0 +1,21 @@
+Copyright (c) 2025 Thielens Marie
+
+All rights reserved.
+
+This code, design, text, images, and other content are the property of the copyright holder.
+No part of this repository may be copied, modified, distributed, or used in any form 
+without the express written permission of the copyright holder.
+
+Tous droits réservés.
+
+Ce code, cette conception, ce texte, ces images et tout autre contenu sont la propriété du détenteur des droits d'auteur.
+Aucune partie de ce référentiel ne peut être copiée, modifiée, distribuée ou utilisée sous quelque forme que ce soit 
+sans l'autorisation écrite expresse du détenteur des droits d'auteur.
+
+
+Alle rechten voorbehouden.
+
+Deze code, dit ontwerp, deze tekst, deze afbeeldingen en andere inhoud zijn eigendom van de auteursrechthebbende.
+Niets uit deze repository mag worden gekopieerd, gewijzigd, verspreid of gebruikt in welke vorm dan ook 
+zonder de uitdrukkelijke schriftelijke toestemming van de auteursrechthebbende.
+
