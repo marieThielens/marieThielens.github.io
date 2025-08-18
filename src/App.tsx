@@ -1,6 +1,6 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from './components/NavBar';
 import Home from './pages/Home';
@@ -11,10 +11,10 @@ import './App.css'
 
 function App() {
   
-
+const basename = process.env.NODE_ENV === "production" ? "/https://github.com/marieThielens/marieThielens" : "";
   return (
     <>
-    <Router>
+    <BrowserRouter basename={basename}>
       <div className="d-flex flex-column min-vh-75">
         <Navbar/>
         <main className="container my-4 flex-grow-1">
@@ -26,7 +26,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </Router>
+    </BrowserRouter>
 
     </>
   )
