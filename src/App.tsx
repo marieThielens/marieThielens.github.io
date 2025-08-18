@@ -11,10 +11,10 @@ import './App.css'
 
 function App() {
   
-const basename = process.env.NODE_ENV === "production" ? "/" : "";
+// const basename = process.env.NODE_ENV === "production" ? "/" : "";
   return (
     <>
-    <BrowserRouter basename={basename}>
+    <BrowserRouter>
       <div className="d-flex flex-column min-vh-75">
         <Navbar/>
         <main className="container my-4 flex-grow-1">
