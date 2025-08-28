@@ -7,20 +7,31 @@
   font-family: monospace;
   border-radius: 6px;
   text-align: left;
+
+  /* Le texte doit s’adapter à la largeur du mobile */
+  white-space: pre-wrap;
+  word-break: break-word;
+
+  /* Supprime le scroll horizontal gênant */
+  overflow-x: hidden;
 }
 
 .terminal-line {
   margin-bottom: 0.2rem;
-}
-
-/* Ligne input avec prompt fixe */
-.terminal-input-line {
   display: flex;
+  flex-wrap: wrap; /* texte revient à la ligne sur mobile */
 }
 
 .terminal-prompt {
   color: lime;
   margin-right: 0.5rem;
+  flex-shrink: 0; /* ne pas couper le prompt */
+}
+
+.terminal-input-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .terminal-input {
@@ -29,13 +40,10 @@
   border: none;
   outline: none;
   flex: 1;
+  min-width: 0; /* ⚡ clé pour éviter que l’input pousse le texte hors écran */
 }
 
 /* Pour mettre certaines commandes en couleur */
 .terminal-line span.command {
   color: deeppink;
-}
-
-.terminal-line {
-  white-space: pre-wrap; /* important pour que les \n soient pris en compte */
 }

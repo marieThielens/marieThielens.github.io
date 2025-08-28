@@ -1,12 +1,14 @@
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import Navbar from './components/NavBar';
+import Navbar from './components/NavBar'
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import Projects from './pages/Projects'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
+import ProjectDescriptionPage from './pages/ProjectDescription';
 import './App.css'
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<About />} />
+            <Route path="/projectDescription/:id" element={<ProjectDescriptionPage />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </main>

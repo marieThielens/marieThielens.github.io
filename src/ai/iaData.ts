@@ -9,9 +9,9 @@ export const iaQuestionsReponses: IaDonnees[] = [
     // A propos de moi -------
     motsCle: ["about", "qui", "toi", "présente", "presente"],
     reponses: [
-      "Je suis Marie Thielens, je suis... Derrière Toi !!! MOUHAHAHAHA (rire diabolique).",
-      "Salut ! Je m'appelle Marie et j'adore coder Avec mes pieds.",
-      "Hey, Hey, bien le bonjour, je m'appelle Marie Thielens. Il me semble que c'est écrit un peu partout (en grand)"
+      "Je suis Marie Thielens, je suis... Derrière Toi !!! MOUHAHAHAHA (rire diabolique). J'habite Bruxelles et je suis en dernière année à l'EPFC pour un bachelier en informatique ",
+      "Salut ! Je m'appelle Marie et j'adore coder Avec mes pieds. J'habite Bruxelles et je suis en dernière année à l'EPFC pour un bachelier en informatique",
+      "Hey, Hey, bien le bonjour, je m'appelle Marie Thielens. Il me semble que c'est écrit un peu partout :p. Je m'appelle Thielens marie. J'habite Bruxelles et je suis en dernière année à l'EPFC pour un bachelier en informatique"
     ],
   },
   // Lien réseau
@@ -32,8 +32,8 @@ export const iaQuestionsReponses: IaDonnees[] = [
   {
     motsCle: ["formation", "études", "parcours", "parcour", "etudes"],
     reponses: [
-      "J'ai étudié l'informatique à l'EPFC avec une spécialisation en développement logiciel.",
-      "Mon parcours m'a amenée à travailler sur du web, du mobile et du jeu vidéo. Je suis entrain de coder un jeu avec unity pendant mes études à l'EPFC"
+      "J'ai fait une formation à interface3 en webdevelopper. Ensuite, j'ai été coach (prof) à becode. Actuellement je suis en dernière année à l'EPFC pour un bachelier en informatique",
+      "Mon parcours m'a amenée à travailler sur du web, du mobile et du jeu vidéo. Je suis entrain de coder un jeu avec unity couplé avec un site d'apprentissage du code fait en React. Je fais cela pour mon tfe à l'EPFC (bachelier en informatique)"
     ]
   },
   {
@@ -48,7 +48,7 @@ export const iaQuestionsReponses: IaDonnees[] = [
     motsCle: ["expérience", "pro", "stage", "travail"],
     reponses: [
       "J'ai déjà travaillé sur plusieurs projets pratiques au cours de mes études. Un jeu en JAVAFX, un tricount en web (flutter/dart/postgrest). Vas voir dans l'onglet Projets, c'est plus complet sur cette page. Pour l'expérience, j'ai travaillé comme coach chez becode",
-      "La liste est mieux expliquée sur la page projets. En attendant saches que j'ai déjà fait des projets en java, react, typescript, php, sql, wordpress. Pour l'expérience, j'ai travaillé comme coach chez becode",
+      "La liste est mieux expliquée sur la page projets. En attendant saches que j'ai déjà fait des projets en java, react, typescript, php, sql, wordpress, flutter. Pour l'expérience, j'ai travaillé comme coach chez becode",
     ],
   },
     {
@@ -63,7 +63,7 @@ export const iaQuestionsReponses: IaDonnees[] = [
     motsCle: ["cv", "resume", "pdf"],
     reponses: [
       "Tu peux télécharger mon CV directement depuis la section 'À propos'.",
-      "Mon CV est disponible en PDF, n’hésite pas à le consulter."
+      "Mon CV est disponible en PDF, n'hésite pas à le consulter."
     ]
   },
       {

@@ -9,7 +9,10 @@ type Ligne = string; // une ligne du terminal
 const aideListe = [
   { sujet: "about", description: "L'auteur du site." },
   { sujet: "competences", description: "Mes compétences techniques et technologies utilisées." },
-  { sujet: "contact", description: "Comment me contacter par email." },
+  { sujet: "contact", description: "Comment me contacter par mail." },
+  { sujet: "humour", description: "Les meilleurs blagues de chatGPT sur le sujet." },
+  { sujet: "formation", description: "A propos de mon parcours (concernant l'informatique)." },
+
   { sujet: "clear", description: "Efface le terminal." },
 ];
 const lignesInitiales: Ligne[] = [
@@ -49,7 +52,7 @@ export default function Terminal() {
   useEffect(() => {
     // Pour que si il y a beaucoup de texte ça scrolle vers le "bas"
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [lignes]);
+  }, [lignes]); // Ne s'exécute que si la ligne a changé
 
 
   // Commande que l'user peut rentrer ---------------------------
