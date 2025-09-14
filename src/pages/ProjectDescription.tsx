@@ -90,7 +90,7 @@ export default function ProjectDescriptionPage() {
       {projet.github && (
         <div className="d-flex justify-content-center mt-3">
           <a href={projet.github} target="_blank" rel="noreferrer" className="btn btn-outline-primary mt-auto">
-            Voir le code sur GitHub
+            Voir en détail
           </a>
         </div>
       )}

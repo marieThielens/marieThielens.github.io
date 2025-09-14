@@ -97,7 +97,7 @@ export const data: dataProject[]  = [
         langage: ["Ubuntu", "Wordpress", "GithubPage", "Injection SQL"],
         github: "https://medium.com/@mariethielens",
         imageLien:"/images/medium.png",
-        imagesDemonstration:["/images/gratt/accueil.mp4", "/images/gratt/jeu.mp4", "/images/gratt/cours.mp4", ],
+        imagesDemonstration:["/images/medium/mediumExemple.png", ],
         contraintes: [
             { categorie: "Makup", description: "Conception du design dans Adobe InDesign ou illustrator " },
         ]
