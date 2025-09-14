@@ -99,7 +99,7 @@ export const data: dataProject[]  = [
         imageLien:"/images/medium.png",
         imagesDemonstration:["/images/medium/mediumExemple.png", ],
         contraintes: [
-            { categorie: "Makup", description: "Conception du design dans Adobe InDesign ou illustrator " },
+            { categorie: "Aucune", description: "Toi et tes envies de partage." },
         ]
     }
 ];
