@@ -1,6 +1,6 @@
 # Thielens Marie portefolio
 
-Vite fait, pour trouver un stage. Le visuel est pas mon point fort. 
+Un portefolio qui présente quelques travaux fait durant mon bachelier en informatique à l'EPFC. 
 
 ## Tous droits réservés.
 

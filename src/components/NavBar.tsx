@@ -9,8 +9,16 @@ export default function Navbar() {
       <div className="container">
 
         {/* coté gauche */}
-        <Link className="navbar-brand" to="/">Mon CV</Link>
-
+            <Link className="navbar-brand d-flex align-items-center" to="/">
+      <img
+        src="/images/onglet.png"
+        alt="Logo"
+        width="30"
+        height="30"
+        className="me-2"
+      />
+      Marie Thielens
+    </Link>
         {/* bouton hamburger */}
         <button
           className="navbar-toggler"

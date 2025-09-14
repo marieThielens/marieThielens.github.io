@@ -1,7 +1,11 @@
-/* body {
-  background-image: url("/images/fond.png");
+body {
+  /* background-image: url("/images/fond.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-} */
+  background-position: center; */
+  background-color: #1F1F1D;
+}
+p, h1, h2 {
+  color: white;
+}
 
