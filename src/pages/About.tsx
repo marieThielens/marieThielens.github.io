@@ -3,13 +3,6 @@ export default function About() {
     <>
     <div>
       <h2 className="mb-4">À propos de moi</h2>
-      <p>En dernière année à l'EPFC pour un bachelier en informatique (orientation développement) je suis à la recherche d'un stage. </p>
-      <p>J'ai été coach chez Becode, prof de guitare au Rwanda où j'ai vécu pendant 4 ans et maman d'un merveilleux ado.</p>
-      <p>Je suis tétue ! Je veux comprendre pourquoi il y a des bugs (mais ça marchait juste avant. Woin), trouver des solutions, apprendre, apprendre et encore apprendre. J'ai de la chance, avec ce métier j'apprendrai toute ma vie 🙂</p>
-      <p> Si vous souhaitez me contacter, me parler d'un projet, d'un stage ou d'une collaboration, envoyez un mail à <strong>thielens.marie@gmail.com</strong> </p>
-    </div>
-    <div className="">
-
       <img
         src="/images/moi.png"
         alt="Mon avatar"
@@ -17,6 +10,15 @@ export default function About() {
         width="150"
         height="150"
       />
+
+      <p>En dernière année à l'EPFC pour un bachelier en informatique (orientation développement) je suis à la recherche d'un stage. </p>
+      <p>J'ai été coach chez Becode, prof de guitare au Rwanda où j'ai vécu pendant 4 ans et maman d'un merveilleux ado.</p>
+      <p>Je suis tétue ! Je veux comprendre pourquoi il y a des bugs (mais ça marchait juste avant. Woin), trouver des solutions, apprendre, apprendre et encore apprendre. J'ai de la chance, avec ce métier j'apprendrai toute ma vie 🙂</p>
+      <p> Si vous souhaitez me contacter, me parler d'un projet, d'un stage ou d'une collaboration, envoyez un mail à <strong>thielens.marie@gmail.com</strong> </p>
+    </div>
+
+
+    <div>
       <h2 className="mb-4">Mes réseaux sociaux</h2>
       <div className="d-flex gap-2">
         <a

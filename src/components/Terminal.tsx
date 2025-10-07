@@ -8,15 +8,14 @@ type Ligne = string; // une ligne du terminal
 
 const aideListe = [
   { sujet: "about", description: "L'auteur du site." },
+  { sujet: "humour", description: "Les meilleurs blagues de chatGPT sur le sujet." },
   { sujet: "competences", description: "Mes compétences techniques et technologies utilisées." },
   { sujet: "contact", description: "Comment me contacter par mail." },
-  { sujet: "humour", description: "Les meilleurs blagues de chatGPT sur le sujet." },
   { sujet: "formation", description: "A propos de mon parcours (concernant l'informatique)." },
-
   { sujet: "clear", description: "Efface le terminal." },
 ];
 const lignesInitiales: Ligne[] = [
-  "Bienvenue sur mon CV interactif ! Tapez `aide` pour la liste des commandes."
+  "Bienvenue Humain 🥸, tape `aide` si tu ne sais pas quoi demander."
 ];
 
 
@@ -39,7 +38,7 @@ function iaReponse(input: string): string {
 
 export default function Terminal() {
   const [lignes, setLignes] = useState<Ligne[]>([
-    "Bienvenue sur mon CV interactif ! Tapez `aide` pour la liste des commandes."
+    "Bienvenue Humain 🥸, tape `aide` si tu ne sais pas quoi demander."
   ]);
   const [input, setInput] = useState<string>("");
   const [historique, setHistorique] = useState<string[]>([]);
@@ -121,6 +120,14 @@ export default function Terminal() {
     setInput(e.target.value);
   };
 
+  // Rendre un lien clicable dans le terminal ------------
+  function rendreLienClicable(text: string): string {
+    return text.replace(
+      /(https?:\/\/[^\s]+)/g,
+      '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+    );
+  }
+
   return (
     <div className="terminal" onClick={() => bottomRef.current?.focus()}>
 
@@ -134,8 +141,14 @@ export default function Terminal() {
           </div>
         );
       } else {
-        // ligne IA
-        return <div key={idx} className="terminal-line">{line}</div>;
+        // ligne IA (réponse)
+        return (
+          <div
+            key={idx}
+            className="terminal-line"
+            dangerouslySetInnerHTML={{ __html: rendreLienClicable(line) }}
+          />
+        );
       }
     })}
 

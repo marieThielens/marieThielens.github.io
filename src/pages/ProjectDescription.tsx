@@ -1,11 +1,14 @@
 import { useParams, Link } from "react-router-dom";
 import { data } from "./data";
+import { useState} from "react";
 
 export default function ProjectDescriptionPage() {
 
   const { id } = useParams<{ id: string }>();
   const projet = data.find((p) => p.id === Number(id));
   const projectId = parseInt(id ?? "0", 10);
+  // pour pouvoir cliquer sur les images et les mettre en grand
+   const [imageGrande, setImageGrande] = useState<string | null>(null);
 
   if (!projet) return <p>Projet introuvable</p>;
 
@@ -60,38 +63,63 @@ export default function ProjectDescriptionPage() {
         </>
       )}
 
+            {/* -------------- Lien GitHub--------- */}
+      {projet.github && (
+        <div className="d-flex justify-content-center mt-3 mb-3">
+          <a href={projet.github} target="_blank" rel="noreferrer" className="btn btn-outline-primary mt-auto">
+            Voir en détail
+          </a>
+        </div>
+      )}
+
       {/* ---------------------Images--------------------- */}
       <div className="row">
       {projet.imagesDemonstration.map((media, idx) => {
         const isVideo = media.endsWith(".mp4"); // Vérifier si c'est une video
         return (
           <div key={idx} className="col-12 col-md-6 mb-3">
-            {/* Vidéo */}
-            {isVideo ? (
-              <video
-                src={media}
-                controls
-                className="w-100 rounded shadow-sm"
-              />
+
+          {/* Vidéo */}
+          {isVideo ? (
+            <video
+              src={media}
+              controls
+              className="w-100 rounded shadow-sm"
+            />
             ) : (
               // image
-              <img
-                src={media}
-                alt={`${projet.titre} demo ${idx}`}
-                className="w-100 rounded shadow-sm"
-              />
-            )}
+            <img
+              src={media}
+              alt={`${projet.titre} demo ${idx}`}
+              className="w-100 rounded shadow-sm"
+              onClick={() => setImageGrande(media)}
+            />
+          )}
           </div>
         );
       })}
       </div>
 
-      {/* -------------- Lien GitHub--------- */}
-      {projet.github && (
-        <div className="d-flex justify-content-center mt-3">
-          <a href={projet.github} target="_blank" rel="noreferrer" className="btn btn-outline-primary mt-auto">
-            Voir en détail
-          </a>
+            {/* Lightbox pour afficher l'image en grand */}
+            {imageGrande && (
+        <div
+          className="lightbox-overlay d-flex justify-content-center align-items-center"
+          onClick={() => setImageGrande(null)}
+        >
+          {/* bouton de fermeture */}
+          <button
+            className="btn-close position-absolute top-0 end-0 m-4"
+            aria-label="Fermer"
+            onClick={() => setImageGrande(null)}
+          ></button>
+
+          {/* image agrandie */}
+          <img
+            src={imageGrande}
+            alt="Agrandissement"
+            className="lightbox-image rounded shadow-lg"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
     </div>

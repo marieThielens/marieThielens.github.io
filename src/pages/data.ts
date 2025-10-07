@@ -49,7 +49,7 @@ export const data: dataProject[]  = [
         desc: "Inspiré d'une application de Google pour prendre des notes rapides, faire des listes et sauvegarder des idées.", 
         aPropos: "",
         langage:  ["PHP", "SQL","Xampp", "Javascript", "Ajax"],
-        github: "/https:/github.com/marieThielens/googleKeep", 
+        github: "https://github.com/marieThielens/googleKeep", 
         imageLien:"/images/googleKeep.png",
         imagesDemonstration: ["/images/googleKeep/login.png", "/images/googleKeep/notes.png", "/images/googleKeep/addCheckingNote.png", "/images/googleKeep/editCheclistNote.png", "/images/googleKeep/openCheckingNote.png", "/images/googleKeep/label.png"],
         contraintes: [
@@ -66,7 +66,7 @@ export const data: dataProject[]  = [
         desc: "Un jeu de réflexion où l'on doit pousser des caisses sur des cases cibles dans un labyrinthe. Un mode pour créer la map, l'autre pour jouer.",
         aPropos: "Dans le cadre du cours “Projet d'analyse et de conception” à l'EPFC il fallait faire une analyse et concevoir une application inspirée du jeu Sokoban en utilisant les Design Patterns. Le projet s'est fait en groupe de 2. ",
         langage: ["JavaFX", "JAVA", "MVVM","xsb", "binding"],
-        github: "https:/github.com/marieThielens/jeuFermierJavaFx",
+        github: "https://github.com/marieThielens/sobokan",
         imageLien:"/images/sokoban/sobokanLayout.png",
         imagesDemonstration:["/images/sokoban/sokoban.mp4", "/images/sokoban/start.png", "/images/sokoban/save.png", "/images/sokoban/dimensions.png", "/images/sokoban/play.png", "/images/sokoban/errors.png"],
         contraintes: [
