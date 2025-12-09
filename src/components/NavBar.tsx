@@ -38,6 +38,16 @@ export default function Navbar() {
             <li className="nav-item"><Link className="nav-link" to="/">Accueil</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/projects">Projets</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/contact">A propos/contact</Link></li>
+            <li>
+              <a href="/images/MarieThielens.pdf" download className="nav-link">
+              <img
+              src="/images/pdf.png"
+              alt="Logo"
+              width="30"
+              height="30"
+              className="me-2"
+            /></a>
+            </li>
           </ul>
         </div>
       </div>
